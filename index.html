@@ -1,0 +1,207 @@
+---
+title: The Manager's Manual
+description: A practical guide for Engineering Management
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+    <meta charset="utf-8">
+    
+    <meta name="apple-touch-fullscreen" content="YES">
+
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="https://managersmanual.com/images/facebook-cover.png" />
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+
+    <title>{{ page.title }}</title>
+
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport">
+    
+    <link href="css/typography.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/media-queries.css" rel="stylesheet" type="text/css">    
+    
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+  </head>
+  <body style="zoom: 1;">
+
+    <header>
+      <div class="toptop" id="sr-top" style="display: none;"></div>
+        <section class="container">
+          <p>
+            <span class="outer">
+              <span class="inner">Available at a <span class="semibold">reduced price</span> until we finish, so <a href="{{ site.book.buy_url }}">act fast</a>!</span>
+            </span>     
+          </p>
+        </section>
+    </header>
+
+    <div class="main">
+      <section class="section-1">
+        <div class="container">
+        	<div class="middle-content">
+            <article>
+              <h2>{{ site.book.title }} <sup style="color: #f3cf5b">beta</sup></h2>
+             
+              <p>{{ site.book.subtitle }}</p>
+             
+              <div class="btns">
+                  <a href="{{ site.book.buy_url }}" class="btn-primary">Buy It Now</a><span> or <a href="/blog">read our blog</a></span>
+              </div>
+             </article>
+             
+             <div class="book-block">
+              <figure>
+                <a href="{{ site.book.buy_url }}">
+                  <span class="price">{{ site.book.price }}</span>
+                  <span class="phone-img">
+                    <img src="images/cover.png" alt="cover">
+                  </span>
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-4">
+        <div class="container">
+          <div class="article-list">
+            <div class="section-title">
+              <h2>Topics covered</h2>
+            </div>
+            
+            {% assign cols = 3 %}
+            {% assign rows = site.book.topics | size | times: 1.0 | divided_by: cols | ceil %}
+            {% assign i = 0 %}
+            {% for j in (1..cols) %}
+            <article>
+              <ul>
+              {% for k in (1..rows) %}
+                {% if site.book.topics[i] %}
+                  <li><i class="fa fa-check"></i><span>{{ site.book.topics[i] }}</span></li>
+                {% endif %}
+                {% assign i = i | plus: 1 %}
+              {% endfor %}
+              </ul>
+            </article>
+            {% endfor %}
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <section class="container">
+        	<div class="middle-content">
+            <article>
+              <h2>Available in plenty of formats</h2>
+              
+              <p>No matter what device you use, we've covered all possible platforms.</p>
+              
+              <ul class="types">
+                 <li>PDF</li> 
+                 <li>EPUB</li>
+                 <li>MOBI</li>     
+              </ul>
+              
+              <div class="btns">
+                <a href="{{ site.book.buy_url }}" class="btn-primary btn-bl">Buy it</a>
+                <a href="{{ site.book.sample_url }}" class="btn-primary btn-bl">Free sample</a>
+              </div>
+
+            </article>
+            <div class="book-block">
+              <figure><a href="{{ site.book.buy_url }}"><img src="images/cover2.jpg" width="346" height="381" alt="iPhone"></a></figure>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="section-02">
+        <div class="container">
+          <div class="feature-info">
+              {% for feature in site.book.features %}
+              <aside>
+                <div class="icon small"><i class="fa fa-{{ feature.icon }}"></i></div>
+                <h2>{{ feature.title }}</h2>
+                <p>{{ feature.description }}</p>   
+              </aside>
+              {% endfor %}
+          </div>
+        </div>
+      </section>
+      
+
+      
+          {% for author in site.book.authors %}
+          <section class="section-5">
+            <div class="container">
+          <article>
+            <figure>
+              {% if author.website %}
+              <a href="{{ author.website }}">
+                <img src="{{ author.avatar }}" class="avatar" alt="{{ author.name }}">
+              </a>
+              {% else %}
+              <img src="{{ author.avatar }}" class="avatar" alt="{{ author.name }}">
+              {% endif %}
+            </figure>
+             
+            <aside>
+              <h2>{{ author.name }}</h2>
+               
+              <p>{{ author.bio | markdownify }}</p>
+               
+              <ul>
+                {% if author.social.twitter %}<li><a href="{{ author.social.twitter }}" class="fa fa-twitter-square"></a></li>{% endif %}
+                {% if author.social.github %}<li><a href="{{ author.social.github }}" class="fa fa-github-square"></a></li>{% endif %}
+                {% if author.social.linkedin %}<li><a href="{{ author.social.linkedin }}" class="fa fa-linkedin-square"></a></li>{% endif %}
+              </ul>
+            </aside>    
+          </article>
+        </div>
+      </section>
+          {% endfor %}
+        
+
+      <footer>
+        <section class="container">
+          <article>
+            <h2>Reach us on</h2>
+            <ul>
+              {% if site.book.social.twitter %}<li><a href="{{ site.book.social.twitter }}" class="fa fa-twitter-square"></a></li>{% endif %}
+              {% if site.book.social.github %}<li><a href="{{ site.book.social.github }}" class="fa fa-github-square"></a></li>{% endif %}
+            </ul>
+            <p>{{ site.book.title }} &copy; {{ site.time | date: "%Y" }}</p>
+          </article>
+        </section>
+      </footer>
+    </div>
+     
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script>
+  		$(document).ready(function() {
+  		  $().UItoTop({ easingType: 'easeOutQuart' });
+  		});
+    </script>
+    
+    <script src="js/smoothscroll.js"></script>
+  </body>
+</html>

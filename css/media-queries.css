@@ -1,0 +1,636 @@
+/* Note: Design for a below width of 1140px */
+@media only screen and (min-width: 768px) and (max-width: 1139px) {
+
+/* #Section-1
+=======================================================*/
+.section-1 .book-block .price {
+	top:-47px;
+	right:38%;
+}
+}
+
+/* Note: Design for a below width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.show_ipad1 {
+	display:block
+}
+
+.hide_ipad1 {
+	display:none
+}
+
+.container {
+	max-width:730px
+}
+
+
+/* #Section-title
+=======================================================*/
+.section-title { 
+	padding-bottom:35px
+}
+
+
+/* #topTop
+=======================================================*/
+#toTop {
+	right:0;
+}
+
+/* #Section-1
+=======================================================*/
+.section-1 .middle-content {
+	min-height:420px;
+	padding:110px 0 40px 0
+}
+
+.section-1 article {
+	width:54%;
+}
+
+.section-1 article h2 {
+	font-size:30px;
+}
+
+.section-1 article p {
+	font-size:20px;
+}
+
+.section-1 .book-block .price {
+	top:-55px;
+	right:33%;
+}
+
+
+/* #Section-2
+=======================================================*/
+.section-2 .bg-aside {
+	padding-bottom:40px
+}
+
+.section-2 .tab-links li {
+	font-size:14px
+}
+
+.section-2 .tab-links li a {
+	height:124px;
+	padding:10px 15px 10px 15px
+}
+
+.section-2 .tab-links li a.selected {
+	height:129px;
+	padding-top:15px;
+}
+
+.section-2 .tab-links li .large {
+	font-size:16px
+}
+
+.section-2 .info-box {
+	height:340px;
+	padding:10px 3%
+}
+
+.section-2 .info-box h2 {
+	font-size:37px
+}
+
+.section-2 .info-box p {
+	font-size:16px;
+	line-height:28px
+}
+
+.section-2 .info-box p.small {
+	padding-bottom:10px
+}
+
+.section-2 .articles {
+	height:407px;
+	background:#fffff7 url(../images/bg-ipad-frame02.png) no-repeat top center;
+	padding:73px 73px 0 73px
+}
+
+.section-02 .feature-info {
+	padding-bottom:30px;
+}
+
+.section-02 .feature-info aside {
+	width:47%;
+	min-height:305px;
+	max-height:305px;
+	margin:0 1% 30px 1%;
+}
+
+
+/* #Section-3
+=======================================================*/
+.section-3 .middle-content {
+	min-height:320px;
+	padding:50px 0 40px 0;
+}
+
+.section-3 article {
+	width:59%;
+}
+
+.section-3 .book-block {
+	left:0;
+}
+
+
+/* #Section-4
+=======================================================*/
+.section-4 ul li {
+	font-size:18px;
+	padding-bottom:10px
+}
+
+.section-4 ul li i {
+	margin-top:5px;
+}
+
+.section-4 .article-list {
+	padding:50px 0
+}
+
+.section-4 article {
+	width:29%;
+	display:inline-block;
+	text-align:left;
+}
+
+.section-4 .article1 {
+	width:35%;
+}
+
+.section-4 .article2 {
+	width:28%;
+}
+
+
+/* #Section-5
+=======================================================*/
+.section-5 h2 {
+	padding-bottom:15px
+}
+
+.section-5 article {
+	padding:50px 0
+}
+
+.section-5 p {
+	font-size:20px
+}
+
+.section-5 figure {
+	width: 150px;
+	margin:0 35px 0 0;
+}
+
+.section-5 aside {
+	width:62%;
+	padding:20px 0 0 0;
+}
+
+
+/* #Section-6
+=======================================================*/
+.section-6 article {
+	padding:50px 0
+}
+
+
+/* #Footer
+=======================================================*/
+footer {
+	width:100%;
+	float:left;
+	padding:50px 0
+}
+
+}
+
+
+/* Note: Design for a width of 768px */
+@media only screen and (max-width: 767px) {
+.show_mobile1 {
+	display:block
+}
+
+.hide_mobile1 {
+	display:none
+}
+
+body {
+	font-size:16px;
+	line-height:26px;
+}
+
+h2 {
+	font-size:28px;
+}
+
+.container {
+	max-width:100%;
+	width:100%;
+	padding:0 4%
+}
+
+
+/* #Section-title
+=======================================================*/
+.section-title {
+	padding-bottom:25px
+}
+
+.section-title h2 {
+	padding-bottom:10px
+}
+
+.section-title p {
+	font-size:18px;
+	line-height:26px
+}
+
+
+/* #topTop
+=======================================================*/
+#toTop {
+	right:-500px
+}
+
+
+/* #Section-1
+=======================================================*/
+.section-1 .middle-content {
+	width:100%;
+	min-height:inherit;
+	padding:45px 0 0 0
+}
+
+.section-1 article {
+	width:100%;
+	text-align:center;
+}
+
+.section-1 article h2 {
+	font-size:30px;
+	padding:0 0 25px 0
+}
+
+.section-1 article p {
+	font-size:20px;
+	padding:0 0 20px 0
+}
+
+.section-1 article .btns {
+	text-align:center;
+}
+
+.section-1 article .btns .btn-primary {
+	float:none;
+	display:inline-block;
+	margin:10px 15px
+}
+
+.section-1 .book-block {
+	width:100%;
+	float:left;
+	position:static;
+	bottom:0;
+	right:0;
+	text-align:center;
+	padding:40px 0 0 0;
+}
+
+.section-1 .book-block figure {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.section-1 .book-block figure img {
+	width:auto;
+	max-width:80%;
+}
+
+.section-1 .book-block .price {
+	float:none;
+	display:inline-block;
+	position:static;
+	position:relative;
+	top:0;
+	right:0;
+	margin:0 0 -35px 0;
+}
+
+
+
+/* #Section-2
+=======================================================*/
+.section-2 {
+	padding:40px 0 0 0;
+	overflow:hidden
+}
+
+.section-2 .bg-aside {
+	width:100%;
+	margin:0;
+	padding:0 0 20px 0
+}
+
+.section-2 .bg-aside aside {
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding-bottom:15px
+}
+
+.section-2 .info-box {
+	height:auto;
+	overflow:visible;
+	padding:20px 3% 15px 3%
+}
+
+.section-2 .info-box h2 {
+	font-size:30px;
+	padding:0 0 15px 0
+}
+
+.section-2 .info-box p {
+	font-size:18px;
+	line-height:24px;
+	padding-bottom:10px
+}
+
+.section-2 .info-box p.small {
+	padding-bottom:10px
+}
+
+.section-2 .articles {
+	width:100%;
+	height:auto;
+	background:none;
+	overflow:visible;
+	padding:0
+}
+
+.section-2 .accordionButton1 {
+	display:block
+}
+
+.section-2 .accordionContent1 {
+	width:100%;
+	float:left;
+	display:none
+}
+
+
+/* #Section-02
+=======================================================*/
+.section-02 {
+	padding:45px 0 0 0;
+}
+
+.section-02 .feature-info h2 {
+	font-size:20px;
+	text-align:center;
+	padding-bottom:15px
+}
+
+.section-02 .feature-info p {
+	font-size:16px;
+	line-height:25px
+}
+
+.section-02 .feature-info .icon {
+	width:100%;
+	min-height:45px;
+	float:left;
+	text-align:center;
+	padding-bottom:10px
+}
+
+.section-02 .feature-info .icon i {
+	font-size:75px;
+	line-height:45px;
+	padding:10px 0 15px 0;
+}
+
+.section-02 .feature-info .small i {
+	font-size:58px
+}
+
+.section-02 .feature-info aside {
+	width:46%;
+	min-height:215px;
+	max-height:215px;
+	margin:0 1.7% 30px 1.7%
+}
+
+
+
+/* #Section-3
+=======================================================*/
+.section-3 .middle-content {
+	min-height:inherit;
+	padding:45px 0 0 0
+}
+
+.section-3 article {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.section-3 article h2 {
+	padding:0 0 25px 0
+}
+
+.section-3 article p {
+	font-size:18px;
+	padding:0 0 20px 0
+}
+
+.section-3 article .types {
+	width:100%;
+	float:left;
+	padding:15px 0 15px 0
+}
+
+.section-3 article .types a {
+	min-width:70px;
+	height:34px;
+	float:none;
+	display:inline-block;
+	margin:0 10px 20px 10px
+}
+
+.section-3 article .btns, .section-3 article .types {
+	text-align:center;
+}
+
+.section-3 article .btns .btn-primary {
+	float:none;
+	display:inline-block;
+	margin:0 5px
+}
+
+.section-3 .book-block {
+	width:100%;
+	float:left;
+	position:static;
+	bottom:0;
+	left:0;
+	text-align:center;
+	padding:40px 0 0 0;
+}
+
+.section-3 .book-block figure {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.section-3 .book-block figure img {
+	width:auto;
+	max-width:80%;
+}
+
+
+/* #Section-4
+=======================================================*/
+.section-4 ul li {
+	font-size:16px;
+	line-height:18px;
+	padding-bottom:14px
+}
+
+.section-4 ul li i {
+	margin-top:0;
+}
+
+.section-4 .article-list {
+	padding:45px 0 0 0
+}
+
+.section-4 article {
+	width:49%;
+	min-width:200px;
+	min-height:190px;
+	display:inline-block;
+	text-align:left;
+	padding:0;
+}
+
+.section-4 .article1 {
+	width:49%;
+}
+
+.section-4 .article2 {
+	width:49%;
+}
+
+
+/* #Section-5
+=======================================================*/
+.section-5 article {
+	text-align:center;
+	padding:40px 0
+}
+
+.section-5 h2 {
+	padding-bottom:10px
+}
+
+.section-5 ul {
+	text-align:center;
+}
+
+.section-5 ul li {
+	padding-right:8px
+}
+
+.section-5 p {
+	font-size:20px
+}
+
+.section-5 aside {
+	width:100%;
+	float:left;
+	padding:0
+}
+
+.section-5 figure {
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding-bottom:20px;
+}
+
+.section-5 figure img {
+	max-width:150px;
+}
+
+
+/* #Section-6
+=======================================================*/
+.section-6 h2 {
+	padding-bottom:10px
+}
+
+.section-6 article {
+	padding:30px 0
+}
+
+
+/* #Footer
+=======================================================*/
+footer {
+	padding:40px 0
+}
+
+footer ul {
+	padding:0 0 20px 0;
+	display:none;
+}
+
+footer ul li {
+	font-size:32px;
+	padding:5px
+}
+
+}
+
+/* Note: Design for a width of 480px */
+@media only screen and (max-width: 479px) {
+.show_mobile2 {
+	display:block
+}
+
+.hide_mobile2 {
+	display:none
+}
+
+/* #Section-2
+=======================================================*/
+.section-02 .feature-info aside {
+	width:100%;
+	min-height:inherit;
+	max-height:none;
+	margin:0 0 35px 0
+}
+
+
+/* #Section-5
+=======================================================*/
+.section-5 aside {
+	width:100%
+}
+
+.section-5 figure {
+	width:100%;
+	margin-bottom:15px
+}
+}
+

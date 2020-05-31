@@ -1,0 +1,68 @@
+plugins:
+  - jekyll-redirect-from
+highlighter: pygments
+permalink: /blog/:title
+book:
+  price: $9.99
+  title: The Manager's Manual
+  subtitle: A practical guide for Engineering Management
+  buy_url: https://leanpub.com/the-managers-manual
+  sample_url: http://samples.leanpub.com/the-managers-manual-sample.pdf
+  features:
+    - title: Free updates 
+      icon: download
+      description: Future book reviews are free
+    - title: Multiple formats
+      icon: book
+      description: Available in ePub, PDF or Mobi
+  topics:
+    - 1-1s
+    - Career Path
+    - Hiring
+    - Product Development
+    - Motivation
+    - Feedback
+    - Coaching
+    - Performance Reviews
+    - Time Management
+  authors:
+    - name: Álvaro Salazar
+      bio: |
+        Álvaro is a seasoned technology leader with over 15 years of experience in global, large, and mid-size organizations. Experienced in a wide range of business domains ranging from finance, through retail and government.
+        He has demonstrated experience in building, managing, and mentoring geographically dispersed software development teams.
+        
+        For the last ten years, he has held several leading roles including  Tech Lead, Engineering Manager, and VP of Engineering growing teams at large-scale startups.
+        
+        Currently, he is leading the engineering team at Europe’s leading personal shopping startup, Lookiero, as the VP of Engineering.
+      avatar: images/alvaro.jpg
+      social:
+        twitter: https://twitter.com/xala3pa
+        linkedin: https://www.linkedin.com/in/alvaro-salazar-46788b5/
+    - name: Félix López
+      bio: |
+        Félix is an Engineering Manager at EventBrite. With more than 17 years of experience, he has gone through web development, game development, Distributed Systems, and FinTech.
+
+        Félix has gone through plenty of roles, as programmer, team lead, CTO and Engineering Manager. He likes to read about Distributed Systems, Management and Psychology.
+      avatar: images/felix.jpg
+      social:
+        website: https://flopezluis.es
+        twitter: https://twitter.com/flopezluis
+        linkedin: https://www.linkedin.com/in/flopezluis/
+    - name: Keyvan Akbary
+      bio: |
+        Keyvan is an **Engineering Leader and programmer** with more than 15 years of experience crafting products customers love and helping teams succeed. He understands technology as a medium for providing value, not the end itself. He has a passion for **Distributed Systems, Software fundamentals, SOLID principles, Clean Code, Design Patterns, Domain-Driven Design** and **Testing**; as well as being a sporadic Functional Programmer. For the last 7 years he has also focused on growing teams in high scaleup product companies, advocating for **customer-centric product development, Extreme Programming, DevOps, Lean** and **Kanban**.
+
+        He has worked on countless projects as a freelancer, on video streaming at Youzee, tradesman marketplace at MyBuilder, in addition to founding his own crowdfunding startup Funddy, and leading FinTech teams at TransferWise. Currently he is leading engineering in the ride-hailing space as **Head of Engineering at Cabify**.
+
+        He is also the author of the book [Domain-Driven Design in PHP](https://leanpub.com/dddinphp).
+
+      avatar: images/keyvan.jpg
+      social:
+        website: https://keyvanakbary.com
+        github: https://github.com/keyvanakbary
+        twitter: https://twitter.com/keyvanakbary
+        linkedin: https://www.linkedin.com/in/keyvanakbary/
+  social:
+    github: https://github.com/the-managers-manual
+    twitter: https://twitter.com/managersmanual
+excerpt_separator: <!--more-->

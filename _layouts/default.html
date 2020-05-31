@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="/css/blog.css" rel="stylesheet" type="text/css">
+        <link href="{{ site.url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.name }}">
+
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}">
+
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}">
+    </head>
+
+    <body>
+        <script>
+            try {
+                document.createEvent('TouchEvent')
+            } catch (e) {
+                document.body.className = 'touch-device';
+            }
+        </script>
+
+        <div id="author" class="rounded">
+            <a class="portrait" href="https://leanpub.com/the-managers-manual">
+                <img src="/images/cover-mini.png" alt="portrait">
+            </a>
+            <p class="name">The Manager's Manual <sup style="color: #DA4E4D">beta</sup></p>
+            <p class="bio">Real examples written in PHP showcasing DDD Architectural Styles, Tactical Design, and Bounded Context Integration<br><a href="/">Tell me more!</a></p>
+
+            <p>
+                <a href="https://leanpub.com/the-managers-manual" class="btn">Buy the book</a>
+            </p>
+        </div>
+
+        <div id="page">
+            {{ content }}
+            <div class="wrapper">
+                <div class="post" id="footer">
+                    <p>The Manager's Manual &copy; {{ site.time | date: "%Y" }}</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            (function() {
+                function viewportOffset() {
+                    if (window.pageYOffset) {
+                        return window.pageYOffset;
+                    }
+                    
+                    return (document.documentElement || document.body.parentNode || document.body).scrollTop;
+                }
+
+                function headerIsHidden(profile) {
+
+                    return viewportOffset() >= 90;
+                }
+
+                function isOnBigScreen() {
+                    var innherWidth = window.innerWidth || document.documentElement.clientWidth;
+
+                    return innherWidth >= 1100;
+                }
+
+                function relocateProfile() {
+                    var profile = document.getElementById('author');
+                    if (isOnBigScreen() && headerIsHidden(profile)) {
+                        profile.classList.add('floating');
+                    } else {
+                        profile.classList.remove('floating');
+                    }
+                }
+
+                function listenOn(elemId, event, fn) {
+                    document.getElementById(elemId).addEventListener(event, fn, false);
+                }
+
+                window.addEventListener('load', relocateProfile);
+                window.addEventListener('resize', relocateProfile);
+                window.addEventListener('scroll', relocateProfile);
+            }());
+        </script>
+    </body>
+</html>
