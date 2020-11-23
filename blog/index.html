@@ -18,4 +18,10 @@ description: A practical guide for Engineering Management
             <a href="{{ post.url }}">Read more...</a>
         </div>
     </div>
+{% else %}
+    <div class="wrapper">
+        <div class="post">
+            <h2>No posts yet</h2>
+        </div>
+    </div>
 {% endfor %}
