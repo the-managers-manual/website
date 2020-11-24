@@ -1,6 +1,6 @@
 plugins:
   - jekyll-redirect-from
-highlighter: pygments
+highlighter: rouge
 permalink: /blog/:title
 book:
   price: $9.99
